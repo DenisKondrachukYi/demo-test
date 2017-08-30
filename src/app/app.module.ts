@@ -7,6 +7,8 @@ import { ContentComponent } from './content/content.component';
 import { ContentHeadComponent } from './content-head/content-head.component';
 import { ContentBidComponent } from './content-bid/content-bid.component';
 import { ContentSummaryComponent } from './content-summary/content-summary.component';
+import { SidebarNavComponent } from './sidebar-nav/sidebar-nav.component';
+import { SidebarUserComponent } from './sidebar-user/sidebar-user.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { ContentSummaryComponent } from './content-summary/content-summary.compo
     ContentComponent,
     ContentHeadComponent,
     ContentBidComponent,
-    ContentSummaryComponent
+    ContentSummaryComponent,
+    SidebarNavComponent,
+    SidebarUserComponent
   ],
   imports: [
     BrowserModule

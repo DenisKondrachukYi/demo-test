@@ -1,0 +1,121 @@
+:host {
+  display: block;
+  border-radius: 5px;
+  background-color: #3d4d65;
+}
+
+.sidebar-user-head {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+
+  &__icon-wrap {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    border-radius: 50%;
+    background: linear-gradient(90deg,#2cd664,#0082d5)
+  }
+
+  &__icon {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+
+  &__id {
+    font-size: 17px;
+    margin-bottom: 5px;
+  }
+
+  &__role {
+    font-size: 11px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  &__angle {
+    flex: 1;
+    text-align: right;
+  }
+}
+
+.sidebar-user-list {
+  padding: 7px 0;
+  border-top: 1px solid #54657e;
+  border-bottom: 1px solid #54657e;
+  list-style: none;
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 9px 30px;
+    cursor: pointer;
+  }
+
+  &__icon {
+    margin-right: 15px;
+    font-size: 16px;
+  }
+
+  &__text {
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__cash {
+    margin-left: 5px;
+  }
+
+  &__counter {
+    width: 32px;
+    margin-left: 5px;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 12px;
+    background-color: #a93aba;
+    color: #ffffff;
+  }
+}
+
+.sidebar-user-nav {
+  display: flex;
+
+  &__out,
+  &__settings {
+    width: 50%;
+    padding: 14px 0;
+    color: #adb9ca;
+  }
+
+  &__out {
+    font-size: 15px;
+    background-color: inherit;
+    border: inherit;
+    border-right: 1px solid #54657e;
+    cursor: pointer;
+  }
+
+  &__settings {
+    text-decoration: none;
+    text-align: center;
+  }
+
+  &__settings-icon,
+  &__out-icon {
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+}

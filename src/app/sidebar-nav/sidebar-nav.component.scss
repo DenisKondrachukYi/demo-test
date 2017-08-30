@@ -1,0 +1,129 @@
+:host {
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #3d4d65;
+}
+
+.sidebar-nav {
+  padding-bottom: 50px;
+}
+
+.sidebar-head {
+  padding: 20px;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  &__logo-wrap {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    line-height: 50px;
+    text-align: center;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border: 2px solid #ffffff;
+      border-radius: 50%;
+    }
+  }
+
+  &__logo {
+    line-height: 50px;
+  }
+
+  &__href-wrap {
+    font-size: 25px;
+    color: #7fafe7;
+  }
+
+  &__pro {
+     color: #ffffff;
+  }
+
+  &__com {
+    font-size: 19px;
+  }
+}
+
+.main-list {
+  padding: 7px 0;
+  border-top: 1px solid #54657e;
+  border-bottom: 1px solid #54657e;
+  list-style: none;
+
+  &--additional {
+    border-top: inherit;
+    border-bottom: inherit;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 9px 30px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(55, 67, 85, .5);
+    }
+
+    &.active {
+      background-color: #374355;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 2px;
+        background-color: #0082d5;
+      }
+    }
+  }
+
+  &__icon {
+    margin-right: 15px;
+    font-size: 16px;
+  }
+
+  &__text {
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__counter {
+    width: 32px;
+    margin-left: 5px;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 12px;
+    background-color: #7f91ab;
+    color: #ffffff;
+
+    &--violet {
+      background-color: #a93aba;
+    }
+
+    &--orange {
+      background-color: #ff9948;
+    }
+  }
+}
