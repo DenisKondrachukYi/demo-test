@@ -12,7 +12,8 @@
 
   &__title {
     margin-bottom: 15px;
-    font-size: 18px;
+    font-family: 'Roboto Condensed';
+    font-size: 20px;
   }
 
   &__wrap {
@@ -45,9 +46,22 @@
   width: 120px;
   text-align: center;
   border-left: 1px solid #374355;
+  transition: .3s;
   cursor: pointer;
+
+  &:hover {
+    .head-nav__icon,
+    .head-nav__text {
+      color: #81bbff;
+    }
+  }
+
+  &__icon {
+    transition: .3s;
+  }
 
   &__text {
     font-weight: 300;
+    transition: .3s;
   }
 }

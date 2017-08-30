@@ -52,9 +52,6 @@
   border-top: 1px solid #54657e;
   border-bottom: 1px solid #54657e;
 
-  &__wrap {
-
-  }
 
   &__text {
     margin-right: 10px;
@@ -67,16 +64,24 @@
     font-weight: 300;
   }
 
+  &__link,
+  &__view {
+    color: #78b6ff;
+    transition: .3s;
+    cursor: pointer;
+    
+    &:hover {
+      color: #077eda;
+    }
+  }
+
   &__link {
     text-decoration: none;
-    color: #78b6ff;
   }
 
   &__view {
     margin-left: 20px;
     white-space: nowrap;
-    color: #78b6ff;
-    cursor: pointer;
   }
 
   &__icon {

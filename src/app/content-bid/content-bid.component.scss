@@ -102,6 +102,12 @@
   align-items: center;
   margin-bottom: 15px;
   padding: 10px 20px 10px 15px;
+  transition: .3s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(61, 77, 101, .5);
+  }
 
   &__icon-wrap {
     width: 40px;
@@ -126,6 +132,13 @@
 
 .customers-features {
   flex: 1;
+  transition: .3s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(61, 77, 101, .5);
+  }
+
 
   &__head {
     display: flex;
@@ -209,6 +222,7 @@
 
   &__body-title {
     margin-bottom: 5px;
+    font-family: 'Roboto Condensed';
     font-weight: 300;
   }
 

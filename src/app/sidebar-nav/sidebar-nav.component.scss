@@ -1,16 +1,19 @@
 :host {
   display: block;
   margin-bottom: 20px;
+  flex: 1;
   border-radius: 5px;
   background-color: #3d4d65;
 }
 
-.sidebar-nav {
-  padding-bottom: 50px;
-}
-
 .sidebar-head {
   padding: 20px;
+  transition: .3s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(55, 67, 85, .5);
+  }
 
   &__link {
     display: flex;
@@ -45,6 +48,7 @@
   }
 
   &__href-wrap {
+    font-family: 'Roboto Condensed';
     font-size: 25px;
     color: #7fafe7;
   }
