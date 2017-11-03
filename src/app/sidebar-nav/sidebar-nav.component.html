@@ -32,7 +32,7 @@
       <span class="main-list__text">Finished</span>
       <span class="main-list__counter">176</span>
     </li>
-    <li class="main-list__item">
+    <li class="main-list__item" [intercomShutdown]="true">
       <i class="material-icons main-list__icon">shopping_basket</i>
       <span class="main-list__text">Canceled</span>
       <span class="main-list__counter">18</span>
@@ -44,10 +44,13 @@
       <span class="main-list__text">Position in rating</span>
       <span class="main-list__counter">6</span>
     </li>
-    <li class="main-list__item">
+
+    <li class="main-list__item intercom-custom">
       <i class="material-icons main-list__icon">shopping_basket</i>
-      <span class="main-list__text">Chats</span>
+      <span class="main-list__text">Intercom</span>
+      <!--<span class="main-list__counter main-list__intercom-badge">{{counter}}</span>-->
     </li>
+
     <li class="main-list__item">
       <i class="material-icons main-list__icon">shopping_basket</i>
       <span class="main-list__text">Help Center</span>

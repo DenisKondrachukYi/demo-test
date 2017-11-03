@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { IntercomModule } from 'ng-intercom';
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ContentComponent } from './content/content.component';
@@ -22,7 +22,8 @@ import { SidebarUserComponent } from './sidebar-user/sidebar-user.component';
     SidebarUserComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    IntercomModule.forRoot({ appId: 'c0p69llg' })
   ],
   providers: [],
   bootstrap: [AppComponent]

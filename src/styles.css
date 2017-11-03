@@ -28,9 +28,6 @@ html {
 
 
 body {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1920px;
   min-width: 320px;
   height: 100%;
   font-family: 'Roboto';
@@ -42,3 +39,5 @@ body {
   background-color: #fff;
   color: #adb9ca;
 }
+
+
