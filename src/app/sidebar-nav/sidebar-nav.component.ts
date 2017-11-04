@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { Intercom } from 'ng-intercom';
 
 @Component({
@@ -8,14 +8,17 @@ import { Intercom } from 'ng-intercom';
 })
 
 export class SidebarNavComponent implements OnInit {
-  counter;
+  public counter = 0;
+  public counterLoader;
 
-  constructor(public intercom: Intercom) {}
+  constructor(public intercom: Intercom, private ref: ChangeDetectorRef) {}
 
   ngOnInit() {
-   this.intercom.onUnreadCountChange((count) => {
+    this.counterLoader = false;
+    this.intercom.onUnreadCountChange((count) => {
       this.counter = count;
-      console.log('Unread Messages ' + this.counter);
+      this.counterLoader = true;
+      this.ref.detectChanges();
     });
   }
 }

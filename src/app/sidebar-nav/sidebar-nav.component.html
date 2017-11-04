@@ -48,7 +48,10 @@
     <li class="main-list__item intercom-custom">
       <i class="material-icons main-list__icon">shopping_basket</i>
       <span class="main-list__text">Intercom</span>
-      <!--<span class="main-list__counter main-list__intercom-badge">{{counter}}</span>-->
+      <span class="main-list__counter main-list__intercom-badge">
+        <i *ngIf="!counterLoader" class="fa fa-circle-o-notch fa-spin" style="font-size:10px"></i>
+        <p *ngIf="counterLoader">{{counter}}</p>
+      </span>
     </li>
 
     <li class="main-list__item">
